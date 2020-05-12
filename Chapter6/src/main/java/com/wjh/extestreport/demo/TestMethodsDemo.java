@@ -26,7 +26,7 @@ public class TestMethodsDemo {
 
     @Test
     public void logDemo() {
-        Reporter.log("自己写的log");
-        throw new RuntimeException("自己制造的运行时异常");
+        Reporter.log("这是log的打印------>log");
+        throw new RuntimeException("制造的运行时异常------>异常");
     }
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "description": "模拟一个带cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text": "这是一个需要携带cookies才能访问的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangsan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "json": {
+        "zahngsan": "success",
+        "status": "1"
+      },
+      "status": 200
+    }
+  }
+]

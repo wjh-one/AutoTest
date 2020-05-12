@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="测试套件-我自己的">
+    <test name="测试模块-我自己的">
+        <classes>
+            <parameter name="name" value="用参数来命名的用例名称"/>
+            <parameter name="age" value="12"/>
+            <class name="com.wjh.extestreport.demo.TestMethodsDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  监听器作用是将输入内容放到报告里面去  -->
+    <listeners>
+        <listener class-name="com.wjh.extestreport.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
