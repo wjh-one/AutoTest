@@ -1,5 +1,21 @@
 [
   {
+    "description": "这是一个返回cookies的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text": "成功获得cookies信息",
+      "cookies": {
+        "login": "true"
+      }
+    }
+  },
+  {
     "description": "模拟一个带cookies的get请求",
     "request": {
       "uri": "/get/with/cookie",
